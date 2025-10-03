@@ -1,13 +1,18 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
+env:
+  GH_WORKSPACE: ${{ inputs.gh-workspace }}
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
     required: true
     default: 'World'
+  gh-workspace:  # id of input
+    description: 'The GitHub workspace'
+    required: true
 outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: '${{ github.workspace }}/hello-world-docker/Dockerfile'
+  image: '${{ inputs.gh-workspace }}/hello-world-docker/Dockerfile'
