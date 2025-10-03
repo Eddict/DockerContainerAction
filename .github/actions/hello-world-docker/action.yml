@@ -16,10 +16,11 @@ runs:
   image: '../../../hello-world-docker/Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+    - $INPUT_WHO-TO-GREET
   env:
     dDistroCodeName: noble
     dBUILDER_NAME: eddict
-    DistroCodeName: $DistroCodeName
+    DistroCodeName: '${DistroCodeName}'
     BUILDER_NAME: $BUILDER_NAME
     WHO_TO_GREET: ${{ inputs.who-to-greet }}
     WHO_TO_GREET2: $INPUT_WHO-TO-GREET
