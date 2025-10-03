@@ -22,3 +22,4 @@ runs:
     DistroCodeName: $DistroCodeName
     BUILDER_NAME: $BUILDER_NAME
     WHO_TO_GREET: ${{ inputs.who-to-greet }}
+    WHO_TO_GREET2: $INPUT_WHO-TO-GREET
