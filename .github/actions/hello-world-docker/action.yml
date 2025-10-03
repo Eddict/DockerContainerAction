@@ -19,5 +19,6 @@ runs:
   env:
     dDistroCodeName: noble
     dBUILDER_NAME: eddict
-    DistroCodeName: ${{ env.DistroCodeName }}
-    BUILDER_NAME: ${{ env.BUILDER_NAME }}
+    DistroCodeName: $DistroCodeName
+    BUILDER_NAME: $BUILDER_NAME
+    WHO_TO_GREET: ${{ inputs.who-to-greet }}
