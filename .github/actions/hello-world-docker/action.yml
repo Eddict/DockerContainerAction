@@ -16,3 +16,6 @@ runs:
   image: '../../../hello-world-docker/Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+  env:
+    dDistroCodeName: noble
+    dBUILDER_NAME: eddict

@@ -3,3 +3,8 @@
 echo "Hello $1"
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
+
+echo "DistroCodeName: $DistroCodeName"
+echo "BUILDER_NAME: $BUILDER_NAME"
+echo "dDistroCodeName: $dDistroCodeName"
+echo "dBUILDER_NAME: $dBUILDER_NAME"
